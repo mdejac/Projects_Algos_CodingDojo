@@ -12,11 +12,6 @@ class SLL {
 
     addFront(value) {
         let new_node = new Node(value);
-        //Check to see if list is empty
-        if(!this.head) {
-            this.head = new_node;
-            return this;
-        }
         new_node.next = this.head;
         this.head = new_node;
         return this;
@@ -54,4 +49,3 @@ console.log(SLL1.front());
 SLL1.removeFront();
 console.log(SLL1);
 console.log(SLL1.front());
-
